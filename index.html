@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3bf52e8ed5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <br><span>Anmoldeep</span><br>Singh From <br>Canada</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------about---------- -->
+
+    <div id="about">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="images/front.png">
+                </div>
+
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Anmoldeep Singh, a skilled software developer with expertise in Java, PHP, C++, JavaScript, Node.js, React.js, MySQL, and MongoDB. I'm passionate about creating user-friendly apps and websites. <br><br>
+
+                    I've built a Task Manager App and an eCommerce platform for smartphones. My education at Langara College has honed my technical skills, and I excel in problem-solving and teamwork.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li><span>Languages</span><br>Java, PHP, C++, JavaScript</li>
+
+                            <li><span>Databases</span><br>MySQL, MongoDB</li>
+
+                            <li><span>Web Technologies</span><br>Node.js, React.js, Express.js, HTML, CSS</li>
+
+                            <li><span>Networking concepts</span><br>TCP/IP, DHCP, DNS</li>
+
+                            <li><span>Others</span><br>Data Structure and Algorithm, OS, OOD, <br> Cloud Computing, Computer Networks, <br>Problem-solving, Teamwork, Communication</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>PHP</span><br>eCommerce Website</li>
+                            <li><span>React.js</span><br>Task Manager Website</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Diploma: Computer Studies from Langara College</li>
+                          
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ <!-- ----------services----------    -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I specialize in creating captivating and responsive websites using the latest technologies like HTML, CSS, JavaScript, Node.js, React.js, and Express.js. Let me bring your web projects to life.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Application Development</h2>
+                    <p>Whether you need desktop or mobile applications, I have expertise in Java, PHP, C++, and more. I'll develop tailored solutions to meet your unique requirements.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Development</h2>
+                    <p>Data is crucial in today's digital landscape. I'll design and maintain efficient databases using MySQL and MongoDB, ensuring your data is secure and easily accessible.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I combine my development skills with a keen eye for design to create user interfaces that are not only visually appealing but also intuitive and user-friendly.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Project Management</h2>
+                    <p>With experience in managing the entire project lifecycle, I can take your ideas from concept to delivery, ensuring projects are completed on time and within budget.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------portofolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/PHP.jpg">
+                    <div class="layer">
+                        <h3>eCommerce Platform</h3>
+                        <p>I've built a dynamic e-commerce site exclusively for Apple smartphones, powered by HTML, CSS, PHP, and MySQL. With an engaging interface, secure payments, and efficient product search, it offers a seamless shopping experience. Tested rigorously using XAMPP, it's now live, providing Apple enthusiasts a safe and user-friendly platform to shop.</p>
+                        <a href="https://github.com/AnmoldeepSingh-Sandhu/PHP-Project.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/React.jpg">
+                    <div class="layer">
+                        <h3>Task Manager Application</h3>
+                        <p> I've built a user-friendly Task Manager app with HTML, CSS, JavaScript, Node.js, React.js and MongoDB. It offers task prioritization, due dates, and reminders. Secure authentication, Node.js, and React.js ensure seamless functionality. MongoDB efficiently manages data. It's a dynamic solution for task management.</p>
+                        <a href="https://github.com/AnmoldeepSingh-Sandhu/React.js-Project.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Algorithm.jpg">
+                    <div class="layer">
+                        <h3>Data Structure and Algorithm</h3>
+                        <p>In the dynamic realm of computer science, algorithms serve as the bedrock of efficient problem-solving and data manipulation. This multifaceted project embarks on an exciting journey through an expansive array of algorithmic concepts, spanning various sorting methodologies, linked lists,  nodes, and essential structures like stacks and queues</p>
+                        <a href="https://github.com/AnmoldeepSingh-Sandhu/Algorithms-Project.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="https://github.com/AnmoldeepSingh-Sandhu" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- --------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> anmolsandhu775@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7785223036</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/anmoldeep--singh/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AnmoldeepSingh-Sandhu"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Resume - Anmoldeep Singh.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+
+                    <form name="submit-to-google-sheet">
+
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Anmoldeep. Made with <i class="fa-solid fa-heart" id="i2"></i> by Anmoldeep Singh</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw7PAcWGL1QBOtCu4OGUlDDgiMvcovhVmzDrSeqzV68Ze47sthQp2dziZ-i5yqhB_Pr/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+    </script>
+
+</body>
+</html>
